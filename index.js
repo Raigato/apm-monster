@@ -20,7 +20,7 @@ const puppeteer = require("puppeteer");
 
   const startButtonDiv = await page.$("#startbutton");
   const startButton = await startButtonDiv.$("button");
-  startButton.click();
+  await startButton.click();
 
   const cells = await page.$$(".cell");
 
